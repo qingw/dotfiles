@@ -1,0 +1,6 @@
+#!/bin/bash
+
+URL='https://www.mercadobitcoin.net/api/ltc/ticker/'
+LAST="$(curl --silent GET $URL | jq '.[].last')"
+
+echo "LTC: $LAST"
