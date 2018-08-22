@@ -19,6 +19,6 @@
 	upstream = rev-parse --abbrev-ref --symbolic-full-name @{u}
 	u-reset = !git reset --hard $(git upstream)
 [commit]
-	gpgsign = true
+	gpgsign = false
 [gpg]
 	program = gpg
